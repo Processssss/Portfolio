@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-/* navbar */
+/* nav */
 nav {
     display: flex;
     justify-content: space-between;
@@ -101,6 +101,50 @@ nav .right a span {
     border-radius: 100%;
 }
 
+/* section 2 */
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #3b3b3b;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+
+
 @media (max-width: 850px) {
     .about .text h2 {
         font-size: 35px;
@@ -142,5 +186,13 @@ nav .right a span {
 
     .about .text h2 {
         font-size: 25px;
+    }
+
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
     }
 }
